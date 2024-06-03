@@ -13,5 +13,3 @@ Projeto criado com as bibliotecas React JS e Material UI.
    `
    npm start
    `
-
-Modificações realizadas, projeto enviado.

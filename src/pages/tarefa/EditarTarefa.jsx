@@ -95,7 +95,7 @@ const EditarTarefa = ({handleCloseEditar, idTarefaSelecionada, tarefas, tarefa, 
               <FormControl>
                 <Input id="tarefa_inicio" type="date" aria-describedby="tarefa_inicio_helper_text" value={inicioTarefa} onChange={e => { setInicioTarefa(e.target.value) }}
                   sx={{
-                    color:'rgba(0, 0, 0, 0.6)',
+                    color:'rgba(245, 138, 165, 0.8)',
                     fontWeight: 400,
                     paddingLeft:'13px'
                   }} 
@@ -107,7 +107,7 @@ const EditarTarefa = ({handleCloseEditar, idTarefaSelecionada, tarefas, tarefa, 
               <FormControl>
                 <Input id="tarefa_fim" type="date" aria-describedby="tarefa_fim_helper_text" value={fimTarefa} onChange={e => { setFimTarefa(e.target.value) }}
                   sx={{
-                    color:'rgba(0, 0, 0, 0.6)',
+                    color:'rgba(245, 138, 165, 0.8)',
                     fontWeight: 400,
                     paddingLeft:'13px'
                   }} 
@@ -125,7 +125,7 @@ const EditarTarefa = ({handleCloseEditar, idTarefaSelecionada, tarefas, tarefa, 
                   onChange={handleRecurso}
                   size="small"
                   sx={{
-                    color:'rgba(0, 0, 0, 0.6)',
+                    color:'rgba(245, 138, 165, 0.8)',
                     fontWeight: 400,
                   }} 
                 >
@@ -145,7 +145,7 @@ const EditarTarefa = ({handleCloseEditar, idTarefaSelecionada, tarefas, tarefa, 
                   onChange={handleStatus}
                   size="small"
                   sx={{
-                    color:'rgba(0, 0, 0, 0.6)',
+                    color:'rgba(245, 138, 165, 0.8)',
                     fontWeight: 400,
                   }} 
                 >
@@ -157,10 +157,10 @@ const EditarTarefa = ({handleCloseEditar, idTarefaSelecionada, tarefas, tarefa, 
             </Grid>
             <Grid container spacing={2} pl={2} mt={2}>
               <Grid item xs={1}>
-                <Button size="small" variant="contained" onClick={handleEditar}>Salvar</Button>
+                <Button size="small" variant="contained" color='secondary' onClick={handleEditar}>Salvar</Button>
               </Grid>  
               <Grid item xs={1}>  
-                <Button size="small" variant="outlined" onClick={handleCloseEditar}>Cancelar</Button>  
+                <Button size="small" variant="outlined" color="error" onClick={handleCloseEditar}>Cancelar</Button>  
               </Grid>
             </Grid>  
           </Grid>
